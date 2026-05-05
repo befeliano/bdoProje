@@ -1,0 +1,21 @@
+# Secrets
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# C++ build
+*.exe
+*.o
+*.obj
+
+# SUMO outputs (tekrar üretilebilir)
+sumo_files/
+
+# IDE
+.vscode/
+.idea/
