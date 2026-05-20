@@ -1,13 +1,19 @@
 import os
 import google.generativeai as genai
-from dotenv import load_dotenv
 
-load_dotenv()
 
-API_KEY = os.getenv("GEMINI_API_KEY")
+api_txt_path = os.path.join("..", "API.txt")
+
+if os.path.exists(api_txt_path):
+    with open(api_txt_path, "r", encoding="utf-8") as f:
+        # Dosya içindeki boşlukları ve satır atlamaları temizleyerek oku
+        API_KEY = f.read().strip()
+else:
+    API_KEY = None
+    
 if not API_KEY:
     raise RuntimeError(
-        "GEMINI_API_KEY bulunamadı. .env dosyası oluştur."
+        "API.txt dosyası bulunamadı veya içi boş!"
     )
 
 genai.configure(api_key=API_KEY)

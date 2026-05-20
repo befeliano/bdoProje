@@ -1,0 +1,3 @@
+/home/eren/bdoProje/engine/build/CMakeFiles/engine.dir
+/home/eren/bdoProje/engine/build/CMakeFiles/edit_cache.dir
+/home/eren/bdoProje/engine/build/CMakeFiles/rebuild_cache.dir

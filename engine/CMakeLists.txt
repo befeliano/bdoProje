@@ -3,4 +3,5 @@ project(BDO_Engine)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(engine main.cpp LSystem.cpp)
+
+add_executable(engine main.cpp LSystem.cpp ToonExporter.cpp)
